@@ -1,0 +1,135 @@
+body, :root{
+    margin: 0 ;
+    padding: 0;
+}
+html, body, .container, .books {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.left {
+    background-image: url(books.jpg);
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+}
+.inputs {
+    background-color: rgba(214, 214, 214, 0.418);
+   backdrop-filter: blur(2px);
+   border-radius: 15px;
+   padding: 4%;
+}
+.books {
+    display: flex;
+
+}
+.display {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit,200px);
+    background: #ffffff;
+    height: 1fr;
+    overflow: scroll;
+
+}
+.card {
+    background-color: rgb(234, 233, 233);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px 3px rgb(173, 173, 173);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica;
+
+}
+.text {
+    all: unset;
+    background-color: rgb(220, 224, 219);
+    border: 2px solid rgb(10, 31, 34);
+    border-radius: 7px;
+    min-width: 15px;
+    min-height: 15px;
+    padding-left: 10px;
+    padding: 5px;
+}
+#read {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#bookForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    all: unset;
+    background-color: rgb(251, 251, 251);
+    border: 2px solid rgb(10, 31, 34);
+    border-radius: 7px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+button:hover {
+    background-color: rgb(10, 31, 34);
+    border-color: white;
+    color: white;
+    transition-duration:0.5s;
+}
+
+.alreadyread {
+    border-left: 10px solid green;
+}
+
+.haventread {
+    border-left: 10px solid rgb(128, 0, 0);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.author, .pages {
+    color: rgb(59, 59, 59);
+}
+.pages {
+    margin-bottom: 10px;
+}
+
+.readbtn {
+    margin-bottom: 10px;
+}
+input:invalid:focus {
+    border: 2px solid rgb(168, 2, 2);
+}
