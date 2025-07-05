@@ -1,2 +1,7 @@
 # myLibrary
-Odin Project, where I can keep track of books I own and can mark if I've read them or not
+
+⚠️ This is part of TheOdinProject, that helps me learn Web Development⚠️  
+  
+🧮Goal of this project: Create a Library that keeps track of Books🧮  
+⚡Difficulties:handling Objects, coming up with a design, user inputs⚡  
+📗What I've learned: bit of CSS (grids), creating objects with code, how to process user inputs📗  
